@@ -281,6 +281,13 @@ final class breadcrumbTest extends TestCase
             ]
         );
 
+	$this->assertEquals(
+            $breadcrumb->getBreadcrumb('Home'),
+            [
+                'Home'
+            ]
+        );
+
         $this->assertEquals(
             $breadcrumb->getBreadcrumb('Delete order'),
             [

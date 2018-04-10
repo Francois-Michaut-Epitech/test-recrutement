@@ -5,8 +5,6 @@ function is_found($current, $target)
 {
 	$i = 0;
 
-	if ($current['name'] == $target)
-		return 1;
 	while (isset($current['child'][$i])) {
 		if ($current['child'][$i]['name'] == $target) {
 			return 1;
